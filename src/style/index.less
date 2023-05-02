@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #bfa;
+    display: flex;
+    justify-content: center;
+}
+
+#gameBox {
+    height: 420px;
+    width: 360px;
+    padding: 20px 18px;
+    ;
+    border: 10px solid #000;
+    border-radius: 30px;
+    position: relative;
+
+
+    #gameDP {
+        position: relative;
+        height: 304px;
+        width: 304px;
+        border: 2px solid #000;
+
+        #snake {
+            &>div {
+                position: absolute;
+                color: pink;
+                width: 10px;
+                height: 10px;
+                background-color: #000;
+                border: 1px solid #bfa;
+            }
+        }
+
+        &>#food {
+            position: absolute;
+            color: pink;
+            width: 10px;
+            height: 10px;
+            left: 40px;
+            top: 100px;
+            background-color: #000;
+            border: 1px solid #bfa;
+            border-radius: 20px;
+
+        }
+
+    }
+
+    ;
+
+    #gameIF {
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+
+        &>span {
+            line-height: 70px;
+            margin: 0 10px;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+
+    }
+}
